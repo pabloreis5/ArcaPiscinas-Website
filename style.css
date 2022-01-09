@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,900;1,900&display=swap');
+/* Imagens utilizadas by: Wesley Tingey, Thomas Park,  Enis Yavuz, Serena Repice, Maria Fernanda Pissioli. From: unsplash.com */
+
+:root{
+    --main: #1c84b4;
+    --second: #ffffff;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--main);
+    color: white;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+section{
+    padding: 2rem 9%;
+}
+body{
+    background: #ffffff;  
+    overflow-x: hidden;
+}
+.btn{
+    display: inline-block;
+    padding: .8rem 3rem;
+    border: .2rem solid;
+    color: #f7f7f7;
+    cursor: pointer;
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.185);
+    background: none;    
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: rgb(28,132,180);   
+    transition: .3s linear;
+    z-index: -1;
+}
+.btn:hover::before{
+    width: 100%;
+    left: 0;
+}
+.btn:hover{
+    color: #fff;  
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.24);
+    font-size: 2.05rem;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left: 0;
+    z-index: 1000;
+    padding: 1rem 7%;
+    background: var(--second);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    border-bottom: 50%;
+}
+header .logo{
+    color: var(--main);
+}
+header .logo img{
+    width: 8rem;
+    height: 8rem;
+}
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+header .navbar ul li a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: var(--main);
+    position: relative;
+    text-transform: none;
+}
+header .navbar ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -.5rem; right: 0;
+    width: 0%;
+    height: .2rem;
+    background: var(--main);
+    transition: .2s linear;
+}
+header .navbar ul li a:hover::before{
+    left: 0;
+    width: 100%;
+}
+header #menu{
+    font-size: 3rem;
+    color: var(--main);
+    cursor: pointer;
+    display: none;
+}
+
+/* HOME SECTION */
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 7%;
+    padding-top: 4rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.329)) ,url('imagens/bg2.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.home .content{
+    flex: 1 1 40rem;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+    border-left: .7rem solid #1c84b4;
+}
+
+.home .content h2{
+    font-size: 4rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+.home .content p{
+    font-size: 2.5rem;
+    color: rgb(211, 210, 210);
+    padding: 2rem 0;
+    text-transform: none;
+}
+
+
+a .image-wpp img{
+    position: fixed;
+    width: 9rem;
+    height: 9rem;
+    bottom: 2.5rem;
+    right: 2.5rem;
+}
+
+
+
+
+
+
+
+
+/* media queries */
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 55%;
+    }
+    header .logo img{
+        width: 4.4rem;
+        height: 4.4rem;
+    }
+    header #menu{
+        display: block;
+    }
+    header .navbar{
+        position: fixed;
+        top: -120%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        opacity: 0;
+    }
+    header .navbar ul{
+        padding: 2rem 0;
+        flex-flow: column;
+        justify-content: center;
+    }
+    header .navbar ul li a{
+        font-size: 2.5rem;
+        color: var(--main);
+        display: block;
+        margin: 1rem 0;
+    }  
+    header .navbar ul li a::before{
+        background: var(--main);
+    }
+    .fa-times{
+        transform: rotate(180deg)
+    }
+    header .navbar.active{
+        top: 7.4rem;
+        opacity: 1;
+    }
+    
+}
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    
+}
+
+
