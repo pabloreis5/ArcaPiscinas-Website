@@ -79,8 +79,11 @@ header{
     z-index: 1000;
     padding: 1rem 7%;
     background: var(--second);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
-    border-bottom: 50%;
+    box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.041);
+    background-color: rgba(255, 255, 255, 0.014);
+    backdrop-filter: blur(17px);
+    -webkit-backdrop-filter: blur(17px);
+    border: 5rem;
 }
 header .logo{
     color: var(--main);
@@ -98,7 +101,7 @@ header .navbar ul{
 header .navbar ul li a{
     font-size: 2rem;
     margin-left: 2rem;
-    color: var(--main);
+    color: #f7f7f7;
     position: relative;
     text-transform: none;
 }
@@ -166,7 +169,10 @@ a .image-wpp img{
     bottom: 2.5rem;
     right: 2.5rem;
 }
-
+a .image-wpp img:hover{
+    width: 9.5rem;
+    height: 9.5rem;
+}
 
 
 
