@@ -79,14 +79,8 @@ header{
     z-index: 1000;
     padding: 1rem 7%;
     background: var(--second);
-    box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.041);
-    background-color: rgba(255, 255, 255, 0.014);
-    backdrop-filter: blur(17px);
-    -webkit-backdrop-filter: blur(17px);
-    border: 5rem;
-}
-header .logo{
-    color: var(--main);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);  
 }
 header .logo img{
     width: 8rem;
@@ -101,7 +95,7 @@ header .navbar ul{
 header .navbar ul li a{
     font-size: 2rem;
     margin-left: 2rem;
-    color: #f7f7f7;
+    color: #fff;
     position: relative;
     text-transform: none;
 }
@@ -120,7 +114,7 @@ header .navbar ul li a:hover::before{
 }
 header #menu{
     font-size: 3rem;
-    color: var(--main);
+    color: #fff;
     cursor: pointer;
     display: none;
 }
@@ -197,12 +191,15 @@ a .image-wpp img:hover{
     html{
         font-size: 55%;
     }
+    
     header .logo img{
         width: 4.4rem;
         height: 4.4rem;
     }
     header #menu{
         display: block;
+        color: #1c84b4;
+        z-index: 1;
     }
     header .navbar{
         position: fixed;
@@ -230,7 +227,7 @@ a .image-wpp img:hover{
         transform: rotate(180deg)
     }
     header .navbar.active{
-        top: 7.4rem;
+        top: 0;
         opacity: 1;
     }
     
