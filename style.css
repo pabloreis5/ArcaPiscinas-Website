@@ -34,6 +34,12 @@ body{
     background: #ffffff;  
     overflow-x: hidden;
 }
+.heading{
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    padding-left: 1rem;
+    border-left: .7rem solid #1c84b4;
+}
 .btn{
     display: inline-block;
     padding: .8rem 3rem;
@@ -80,11 +86,12 @@ header{
     padding: 1rem 7%;
     background: var(--second);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.1);  
+    background-color: rgb(255, 255, 255);  
 }
 header .logo img{
-    width: 8rem;
-    height: 8rem;
+    color: #1c84b4;
+    width: 6rem;
+    height: 6rem;
 }
 header .navbar ul{
     display: flex;
@@ -95,7 +102,7 @@ header .navbar ul{
 header .navbar ul li a{
     font-size: 2rem;
     margin-left: 2rem;
-    color: #fff;
+    color: #1c84b4;
     position: relative;
     text-transform: none;
 }
@@ -114,7 +121,7 @@ header .navbar ul li a:hover::before{
 }
 header #menu{
     font-size: 3rem;
-    color: #fff;
+    color: #1c84b4;
     cursor: pointer;
     display: none;
 }
@@ -128,9 +135,9 @@ header #menu{
     gap: 1.5rem;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem 7%;
+    padding: 1.5rem 9%;
     padding-top: 4rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.329)) ,url('imagens/bg2.jpg') no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)) ,url('imagens/bg2.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -155,6 +162,12 @@ header #menu{
     text-transform: none;
 }
 
+/* ABOUT SECTION */
+
+
+
+
+
 
 a .image-wpp img{
     position: fixed;
@@ -173,28 +186,19 @@ a .image-wpp img:hover{
 
 
 
-
 /* media queries */
 @media(max-width:991px){
     html{
         font-size: 55%;
     }
     header{
-        padding: 2rem;
-    }
-    section{
-        padding: 2rem;
+        padding: 1rem 2rem;
     }
 }
 
 @media(max-width:768px){
     html{
-        font-size: 55%;
-    }
-    
-    header .logo img{
-        width: 4.4rem;
-        height: 4.4rem;
+        font-size: 50%;
     }
     header #menu{
         display: block;
@@ -234,7 +238,7 @@ a .image-wpp img:hover{
 }
 @media(max-width:450px){
     html{
-        font-size: 50%;
+        font-size: 45%;
     }
     
 }
