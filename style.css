@@ -28,17 +28,23 @@ html{
     overflow-x: hidden;
 }
 section{
-    padding: 2rem 9%;
+    padding: 2rem 7%;
 }
+.heading{
+    text-align: center;
+    color: #666;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+    font-weight: 200;
+}
+.heading span{
+    color: #1c84b4;
+    text-transform: uppercase;} 
+
 body{
     background: #ffffff;  
     overflow-x: hidden;
-}
-.heading{
-    margin-bottom: 3rem;
-    font-size: 3rem;
-    padding-left: 1rem;
-    border-left: .7rem solid #1c84b4;
 }
 .btn{
     display: inline-block;
@@ -73,7 +79,6 @@ body{
 .btn:hover{
     color: #fff;  
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.24);
-    font-size: 2.05rem;
 }
 header{
     width: 100%;
@@ -163,6 +168,68 @@ header #menu{
 }
 
 /* ABOUT SECTION */
+.about{
+    background: url('imagens/bgabout.svg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 1rem;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: #666;
+    font-weight: 200;
+    text-transform: none;
+    padding-bottom: 2rem; 
+}
+.about .row .content p{
+    font-size: 1.8rem;
+    color: #333;
+    padding: 1rem 0;
+    font-weight: 200;
+    text-transform: none;
+    line-height: 1.8;
+}
+.about .row .image{
+    flex: 1 1 45rem;
+}
+.about .row .image img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
