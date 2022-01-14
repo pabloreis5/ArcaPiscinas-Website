@@ -35,12 +35,13 @@ section{
     color: #666;
     text-transform: uppercase;
     padding-bottom: 3.5rem;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 200;
 }
 .heading span{
     color: #1c84b4;
-    text-transform: uppercase;} 
+    text-transform: uppercase;
+} 
 
 body{
     background: #ffffff;  
@@ -178,6 +179,7 @@ header #menu{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 6rem;
 }
 .about .row .content{
     flex: 1 1 45rem;
@@ -189,6 +191,7 @@ header #menu{
     font-weight: 200;
     text-transform: none;
     padding-bottom: 2rem; 
+    border-bottom: .2rem solid #1c84b459;
 }
 .about .row .content p{
     font-size: 1.8rem;
@@ -203,7 +206,7 @@ header #menu{
 }
 .about .row .image img{
     width: 100%;
-    border-radius: 50%;
+    
 }
 
 
@@ -238,14 +241,14 @@ header #menu{
 
 a .image-wpp img{
     position: fixed;
-    width: 9rem;
-    height: 9rem;
+    width: 7rem;
+    height: 7rem;
     bottom: 2.5rem;
     right: 2.5rem;
 }
 a .image-wpp img:hover{
-    width: 9.5rem;
-    height: 9.5rem;
+    width: 7.5rem;
+    height: 7.5rem;
 }
 
 
