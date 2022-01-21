@@ -1,6 +1,6 @@
 # ArcaPiscinas-Website
 
-Projeto desenvolvido para a empresa de piscinas 'Arca Piscinas'. Focalizando também o desenvolvimento pessoal em HTML/CSS/JS.
+Projeto [em densenvolvimento] para a empresa de piscinas 'Arca Piscinas'. Focalizando também o desenvolvimento pessoal em HTML/CSS/JS.
 
 ## Ícones
 
