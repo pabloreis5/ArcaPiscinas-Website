@@ -24,6 +24,27 @@ html{
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
 }
+section{
+    padding: 2rem 9%;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border: .2rem solid white;
+    font-weight: 300;
+    border-radius: 5rem;
+    box-shadow: var(--box-shadow);
+}
+.btn:hover{
+    background: var(--main-color);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.699);
+    letter-spacing: .1rem;
+}
+
 html::-webkit-scrollbar-track{
     background: #fff;
 }
@@ -38,7 +59,7 @@ html::-webkit-scrollbar-thumb{
     align-items: center;
     justify-content: space-between;
     padding: 2rem 9%;
-    background: var(--main-color);
+    background: rgb(255, 255, 255);
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 1000;
@@ -46,26 +67,90 @@ html::-webkit-scrollbar-thumb{
 }
 .header .logo{
     font-size: 2rem;
-    color: #fff;
+    color: var(--main-color);
     font-weight: 500;
 }
 .header .navbar a{
     margin-left: 1.5rem;
     padding: .7rem;
     font-size: 1.8rem;
-    color: #fff;
+    color: var(--main-color);
     font-weight: 300;
 }
 .header .navbar a:hover{
-    color: var(--main-color);
-    background: #fff;
+    color: #fff;
+    background: var(--main-color);
     border-radius: 5rem;
 }
 #menu-btn{
     cursor: pointer;
-    color: #fff;
+    color: var(--main-color);
     font-size: 3rem;
     display: none;
+}
+
+/* HOME SECTION */
+
+.home{
+    padding: 0;
+}
+.home .swiper-slide{
+    min-height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .swiper-slide::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.479);
+    z-index: -1;
+}
+
+.home .swiper-slide .content{
+    text-align: center;
+    width: 90rem;
+}
+
+.home .swiper-slide .content span{
+    font-size: 2.5rem;
+    display: block;
+    padding-bottom: .5rem;
+    color: rgb(236, 236, 236);
+    font-weight: 200;
+}
+.home .swiper-slide .content h3{
+    font-size: 7rem;
+    text-transform: uppercase;    
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-shadow: 0 .3rem 1rem #447eb0bd;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    height: 5rem;
+    width: 5rem;
+    color: white;
+    background: #447eb0;
+    line-height: 5rem;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    border: .1rem solid rgba(255, 255, 255, 0.493);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size: 2rem;
 }
 
 
@@ -74,7 +159,27 @@ html::-webkit-scrollbar-thumb{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+    section{
+        padding: 3rem 5%;
+    }
+}
+
 @media (max-width:991px){
+    section{
+        padding: 3rem 2rem;
+    }
     html{
         font-size: 55%;
     }
@@ -93,7 +198,7 @@ html::-webkit-scrollbar-thumb{
     .header .navbar{
         position: absolute;
         top: 99%; left: 0; right: 0;
-        background: var(--main-color);
+        background: #fff;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         text-align: center;
     }
@@ -105,10 +210,22 @@ html::-webkit-scrollbar-thumb{
         margin: 3.5rem 2rem;
         display: block;
     }
+    .home .swiper-slide .content h3{
+        font-size: 5rem;
+    }
+    .swiper-button-next,
+    .swiper-button-prev{
+        top: initial;
+        bottom: 1rem;
+    }
+        
 }
 
 @media (max-width:450px){
     html{
         font-size: 50%;
+    }
+    .home .swiper-slide .content h3{
+        font-size: 3rem;
     }
 }
